@@ -65,5 +65,3 @@ void InitOscillator(void);
     }
 #endif
 #endif      // end of CLOCK_H
-
-

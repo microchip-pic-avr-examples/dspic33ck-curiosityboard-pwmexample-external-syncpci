@@ -40,7 +40,6 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 #include "clock.h"
 #include "pwm.h"
@@ -48,12 +47,11 @@
 
 int main(void)
 {
-    
     InitOscillator();
     PWM_Initialize();
     TIMER1_Initialize();
 
-    /** RP61 is configured as PCI8 used as PCI sync source of PG1 and PG2 
+    /** RP61 is configured as PCI8, which is the PCI sync source of PG1 and PG2. 
     In the hardware , output on Port pin RD6 is connected to RP61 (PCI8)*/
     RPINR12bits.PCI8R = 61; 
     TRISDbits.TRISD6 = 0;

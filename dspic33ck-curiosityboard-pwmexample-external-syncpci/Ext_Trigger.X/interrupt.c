@@ -41,8 +41,6 @@ uint16_t counter = 0;
 
 void __attribute__((__interrupt__, no_auto_psv)) _T1Interrupt(void)
 {
-    
-    
     if(counter < 200)
     { 
         counter++;
@@ -54,5 +52,6 @@ void __attribute__((__interrupt__, no_auto_psv)) _T1Interrupt(void)
         counter = 0;
     }
     
-    IFS0bits.T1IF = 0; //Clear Timer1 interrupt flag
+    /** Clear the Timer1 interrupt flag */
+    IFS0bits.T1IF = 0; 
 }

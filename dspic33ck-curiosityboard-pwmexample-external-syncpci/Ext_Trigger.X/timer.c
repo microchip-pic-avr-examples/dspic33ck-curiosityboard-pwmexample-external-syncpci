@@ -39,7 +39,6 @@
 
 void TIMER1_Initialize(void)
 {
-    
     /** Initialize Timer1 Control Register */
     T1CON = 0;
     
@@ -63,12 +62,11 @@ void TIMER1_Initialize(void)
     T1CONbits.TCKPS = 0b01;             
     
     /** Timer Period in mSec = ((Pre-scaler /FP) * PR1) * 1000
-        = ((8 / 200M) * 2500) * 1000 =  0.1 mSec or  ~ 10 kHz */
+        = ((8 / 200M) * 2500) * 1000 =  0.1 mSec or  = 10 kHz */
     PR1 = 2500;
     
     _T1IF = 0;
     _T1IP = 5;
     _T1IE = 1;                        
     T1CONbits.TON = 1;  
-    
 }

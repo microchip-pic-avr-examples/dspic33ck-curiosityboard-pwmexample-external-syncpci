@@ -45,7 +45,7 @@ extern "C" {
 #endif
   
 #define PWM_FREQUENCY_COUNT     10000 
-#define DEAD_TIME_COUNT 100        
+#define DEAD_TIME_COUNT         100        
 
 
 #define PWM1TurnON() PG1CONLbits.ON =1
@@ -62,4 +62,3 @@ void PWM_Initialize(void);
 #endif
 
 #endif	/* PWM_H */
-

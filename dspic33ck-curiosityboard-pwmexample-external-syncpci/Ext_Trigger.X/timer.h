@@ -55,4 +55,3 @@ void TIMER1_Initialize(void);
 #endif
 
 #endif	/* TIMER_H */
-
