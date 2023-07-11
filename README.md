@@ -62,7 +62,7 @@ To clone or download this application firmware on GitHub,
     <p align="left">
     <img  src="images/har3.PNG"></p>
 
-4. Connect the PWM pins RB10, RB11, RB12 and RB13 to the oscilloscope to monitor the PWM signals. </p>
+4. Connect the PWM pins RB12, RB13, RB14 and RB15 to the oscilloscope to monitor the PWM signals. </p>
 
 ## 4.	BASIC DEMONSTRATION
 <p style='text-align: justify;'> Follow the instructions step-by-step, to set up and run the demo example:</p>
@@ -94,7 +94,7 @@ To clone or download this application firmware on GitHub,
     <p align="left">
     <img  src="images/deviceprogramming.PNG"></p>
 
-5. Monitor the PWM signals on the pins RB10, RB11, RB12 and RB13 using oscilloscope.
+5. Monitor the PWM signals on the pins RB12, RB13, RB14 and RB15 using oscilloscope.
 
 ## 	5. REFERENCES:
 For more information, refer to the following documents or links.
